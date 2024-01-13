@@ -1,0 +1,29 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="16">
+            <item index="0" class="java.lang.String" itemvalue="python-pygaze" />
+            <item index="1" class="java.lang.String" itemvalue="argparseqt" />
+            <item index="2" class="java.lang.String" itemvalue="pygame" />
+            <item index="3" class="java.lang.String" itemvalue="ConfigHelper" />
+            <item index="4" class="java.lang.String" itemvalue="kiwisolver" />
+            <item index="5" class="java.lang.String" itemvalue="pydub" />
+            <item index="6" class="java.lang.String" itemvalue="PyQt5-sip" />
+            <item index="7" class="java.lang.String" itemvalue="cycler" />
+            <item index="8" class="java.lang.String" itemvalue="WMI" />
+            <item index="9" class="java.lang.String" itemvalue="playsound" />
+            <item index="10" class="java.lang.String" itemvalue="PyQt5" />
+            <item index="11" class="java.lang.String" itemvalue="certifi" />
+            <item index="12" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="13" class="java.lang.String" itemvalue="tobii-research" />
+            <item index="14" class="java.lang.String" itemvalue="pycallgraph" />
+            <item index="15" class="java.lang.String" itemvalue="Pillow" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
