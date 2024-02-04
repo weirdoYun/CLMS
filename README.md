@@ -3,7 +3,7 @@
 This is the official PyTorch implementation of **CLMS** (Continual Learning Multi-Scale) .
 
 CLMS: Bridging Domain Gaps in Medical Imaging with Continual Learning for Source-Free Adaptation.
-![framework.png](/imgs/framework.png)
+![framework.png](figure1.png)
 
 # Get Started
 
