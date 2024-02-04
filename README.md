@@ -30,9 +30,10 @@ scipy=1.2.0
     -   The file format is a dictionary with a key 'slide', and the corresponding value is a list containing paths to target domain images. Example of Target Domain Training Set File (`targetDomain_train.pt`):
  - {
        'slide': [
-           '/path/to/target/image1.jpg',
-           '/path/to/target/image2.jpg',
+           '/path/to/target/image1.jpg',  
+           '/path/to/target/image2.jpg',  
            '/path/to/target/image3.jpg',
+            ...  
        ] }
  -  **Format of Augmented Domain Training Set Files:**
     
@@ -41,9 +42,9 @@ scipy=1.2.0
     -  The file format is a dictionary with a key 'slide', and the corresponding value is a list containing paths to target domain images. Example of Augmented Domain Training Set File (`augmentation_train.pt`):
     - {
        'slide': [
-           '/path/to/aug/image1.jpg',
-           '/path/to/aug/image2.jpg',
-           '/path/to/aug/image3.jpg',
+           '/path/to/aug/image1.jpg',  
+           '/path/to/aug/image2.jpg',  
+           '/path/to/aug/image3.jpg',  
        ] }
    
 ## Load Source Model Weights file
