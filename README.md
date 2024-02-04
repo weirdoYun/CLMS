@@ -25,12 +25,12 @@ scipy=1.2.0
     
     -   Files in `targetLibPath` are of type `.pt`.
     -   They can be accessed using `torch.load()`.
-    -   The file format is a dictionary with a key 'slide', and the corresponding value is a list containing paths to target domain images. Example of Target Domain Training Set File (`targetDomain_train.pt`):
+    -   The file format is a dictionary with a key 'slide', and the corresponding value is a list containing paths to target domain images. Example of Target Domain Training Set File (`targetDomain_train.pt`):  
       {  
        'slide': [  
            '/path/to/target/image1.jpg',  
            '/path/to/target/image2.jpg',  
-           '/path/to/target/image3.jpg',
+           '/path/to/target/image3.jpg',  
               ]    
       }
  -  **Format of Augmented Domain Training Set Files:**
