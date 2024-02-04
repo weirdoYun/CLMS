@@ -3,7 +3,7 @@
 This is the official PyTorch implementation of **CLMS** (Continual Learning Multi-Scale) .
 
 CLMS: Bridging Domain Gaps in Medical Imaging with Continual Learning for Source-Free Adaptation.
-![framework.png](/imgs/2024-02-04/jkC8yDNxwmTH0ORB.png)
+![framework.png](/imgs/framework.png)
 
 # Get Started
 
@@ -66,4 +66,4 @@ After completing data preparation, it is necessary to load the source domain mod
  - After completing the aforementioned setup, execute the command `python train.py` to commence the training process.
 
 ## Test
-After completing the training, you can set the paths for the target domain test set and source domain test set, as well as the loaded model weights in the `test/test.py` file. Execute the command `python test.py` to start the testing process.
+- After completing the training, you can set the paths for the target domain test set and source domain test set, as well as the loaded model weights in the `test/test.py` file. Execute the command `python test.py` to start the testing process.
