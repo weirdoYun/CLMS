@@ -34,7 +34,8 @@ scipy=1.2.0
            '/path/to/target/image2.jpg',  
            '/path/to/target/image3.jpg',
             ...  
-       ] }  
+       ]  
+   }  
  -  **Format of Augmented Domain Training Set Files:**
     
     -   Files in `augLibPath` are also of type `.pt`.
@@ -45,7 +46,8 @@ scipy=1.2.0
            '/path/to/aug/image1.jpg',  
            '/path/to/aug/image2.jpg',  
            '/path/to/aug/image3.jpg',  
-       ]  }  
+       ]  
+      }  
    
 ## Load Source Model Weights file
 After completing data preparation, it is necessary to load the source domain model weight. In the `options/base_options.py` file, the `checkpoints_dir` field represents the path to the source domain model weights.
