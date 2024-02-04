@@ -19,10 +19,10 @@ scikit-learn=0.23.2
 scipy=1.2.0  
 
 ## Datasets Preparation
-"It is necessary to set the paths for the training data required for training the model in the options/base_options.py file."
- -  **Options Configuration in options/base_options.py:**
-    -   `targetLibPath`: Path to the training dataset in the target domain.
-    -   `augLibPath`: Path to the dataset in the augmented domain.
+
+"To configure the options for training the model, it is essential to specify the paths in the options/base_options.py file. The following settings are crucial for training:
+targetLibPath: Path to the training dataset in the target domain.
+augLibPath: Path to the dataset in the augmented domain."
  -  **Format of Target Domain Training Set Files:**
     
     -   Files in `targetLibPath` are of type `.pt`.
