@@ -50,8 +50,7 @@ scipy=1.2.0
  - In `options/train_options.py`, adjust the `n_epochs` field to set the
    number of training epochs, and configure the learning rate with the  
    `lr` parameter.
- - For other training-related settings, please carefully review the   
-   comments in `options/base_options.py` and `train_options.py`.
+ - For other training-related settings, please carefully review the comments in `options/base_options.py` and `train_options.py`.
    
  - After completing the aforementioned setup, execute the command `python train.py` to commence the training process.
 
