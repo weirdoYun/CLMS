@@ -5,7 +5,7 @@ import numpy as np
 import torch.nn as nn
 import torch.optim as optim
 from DataLoader import Dataset
-import models.model_seg as UNet
+import models.model_seg as model_seg
 from torchvision import transforms
 from torch.utils.data import DataLoader
 from sklearn.metrics import roc_auc_score
@@ -103,7 +103,7 @@ def func(TestLibPath,checkpointsPath, epoch):
     G_A.load_state_dict(weight)
     G_A.cuda()
 
-    segmodel = UNet.Deeplab(1)
+    segmodel = model_seg.Deeplab(1)
     weightPath_seg = os.path.join(checkpointsPath, epoch + '_net__seg.pth')
 
     weight = torch.load(weightPath_seg)
@@ -155,7 +155,7 @@ def func_withOutGA(TestLibPath, checkpointsPath, epoch):
     TestDataSet = Dataset(TestLib, Normalize, 'test')
     TestDataLoader = DataLoader(TestDataSet, batch_size=Batchsize, shuffle=False, num_workers=num_worker)
 
-    segmodel = UNet.Deeplab(1)
+    segmodel = model_seg.Deeplab(1)
     weightPath_seg = os.path.join(checkpointsPath, epoch + '_net__seg.pth')
 
     weight = torch.load(weightPath_seg)
