@@ -37,7 +37,7 @@ CLMS: Bridging Domain Gaps in Medical Imaging with Continual Learning for Source
 
    
 ## Load Source Model Weights file
--After completing data preparation, it is necessary to load the source domain model weight. In the `options/base_options.py` file, the `checkpoints_dir` field represents the path to the source domain model weights.
+- After completing data preparation, it is necessary to load the source domain model weight. In the `options/base_options.py` file, the `checkpoints_dir` field represents the path to the source domain model weights.
 
 ## Train
 
