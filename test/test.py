@@ -127,12 +127,8 @@ def func(TestLibPath,checkpointsPath, epoch):
         Pred1List = []
 
         for i, (img, lab) in enumerate(TestDataLoader):
-            # print('Validating - Epoch: [{}/{}]\tBatch: [{}/{}]'.format(1,1 , i + 1, len(TestDataLoader)))
             img, lab = img.cuda(), lab.cuda()
-            # img = torch.nn.functional.interpolate(img, size=(384, 384))
             output_GA = G_A(img)
-            # output_GA = torch.nn.functional.interpolate(output_GA, size=(384, 384))
-
             output = segmodel(output_GA)
             output, lab = output.cpu(), lab.cpu()
             Pred1List.append(output[:,0,:,:].unsqueeze(1))
@@ -140,11 +136,7 @@ def func(TestLibPath,checkpointsPath, epoch):
         Pred1 = torch.cat(Pred1List, 0)
         GT1 = torch.cat(GT1List, 0)
         mask1Dice_singleEpoch = calculate_avgDice( GT1.numpy() > (50 / 100),Pred1.numpy() > (40 / 100))
-        # for i in range(0, 100, 5):
-        #     tempDice1 = single_dice_coef(Pred1.numpy() > (i / 100), GT1.numpy() > (i / 100))
-        #     if tempDice1 > mask1Dice_singleEpoch:
-        #         mask1Dice_singleEpoch = tempDice1
-        #         thre = i/100
+
 
     return thre, mask1Dice_singleEpoch
 
@@ -167,14 +159,6 @@ def func_withOutGA(TestLibPath, checkpointsPath, epoch):
     weightPath_seg = os.path.join(checkpointsPath, epoch + '_net__seg.pth')
 
     weight = torch.load(weightPath_seg)
-    import collections
-    dicts = collections.OrderedDict()
-    for k, value in weight.items():
-        if "module" in k:  # 去除命名中的module
-            k = k.split(".")[1:]
-            k = ".".join(k)
-        dicts[k] = value
-    weight = dicts
     segmodel.load_state_dict(weight)
     segmodel.cuda()
 
