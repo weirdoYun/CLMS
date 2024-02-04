@@ -41,15 +41,9 @@ CLMS: Bridging Domain Gaps in Medical Imaging with Continual Learning for Source
 
 ## Train
 
- - Before training, you need to configure the weight saving path in the
-   `checkpoints_dir` field in `options/base_options.py`. Set the desired
-   batch size in the `batch_size` field, and specify the GPUs for
-   training in the `gpu_ids` dictionary; this framework supports
-   multi-GPU parallel training.
+ - Before training, you need to configure the weight saving path in the `checkpoints_dir` field in `options/base_options.py`. Set the desired batch size in the `batch_size` field, and specify the GPUs for training in the `gpu_ids` dictionary; this framework supports multi-GPU parallel training.
    
- - In `options/train_options.py`, adjust the `n_epochs` field to set the
-   number of training epochs, and configure the learning rate with the  
-   `lr` parameter.
+ - In `options/train_options.py`, adjust the `n_epochs` field to set the number of training epochs, and configure the learning rate with the `lr` parameter.
  - For other training-related settings, please carefully review the comments in `options/base_options.py` and `train_options.py`.
    
  - After completing the aforementioned setup, execute the command `python train.py` to commence the training process.
