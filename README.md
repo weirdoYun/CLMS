@@ -20,9 +20,7 @@ scipy=1.2.0
 
 ## Datasets Preparation
 
-"To configure the options for training the model, it is essential to specify the paths in the options/base_options.py file. The following settings are crucial for training:
-targetLibPath: Path to the training dataset in the target domain.
-augLibPath: Path to the dataset in the augmented domain."
+ - It is necessary to set the paths for the training data required for training the model in the options/base_options.py file. Set the path for the target domain training dataset in the `targetLibPath` field of `options/base_options`, and specify the path for the augmented domain dataset in the `augLibPath` field.
  -  **Format of Target Domain Training Set Files:**
     
     -   Files in `targetLibPath` are of type `.pt`.
@@ -50,7 +48,7 @@ augLibPath: Path to the dataset in the augmented domain."
       }  
    
 ## Load Source Model Weights file
-After completing data preparation, it is necessary to load the source domain model weight. In the `options/base_options.py` file, the `checkpoints_dir` field represents the path to the source domain model weights.
+-After completing data preparation, it is necessary to load the source domain model weight. In the `options/base_options.py` file, the `checkpoints_dir` field represents the path to the source domain model weights.
 
 ## Train
 
