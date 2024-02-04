@@ -25,26 +25,16 @@ scipy=1.2.0
     
     -   Files in `targetLibPath` are of type `.pt`.
     -   They can be accessed using `torch.load()`.
-    -   The file format is a dictionary with a key 'slide', and the corresponding value is a list containing paths to target domain images. Example of Target Domain Training Set File (`targetDomain_train.pt`):  
-      {  
-       'slide': [  
-           '/path/to/target/image1.jpg',  
-           '/path/to/target/image2.jpg',  
-           '/path/to/target/image3.jpg',  
-              ]    
-      }
+    -   The file format is a dictionary with a key 'slide', and the corresponding value is a list containing paths to target domain images. Example of Target Domain Training Set File (`targetDomain_train.pt`):
+    -   {'slide': ['/target/image1.jpg', '/target/image2.jpg', ...] }
+
  -  **Format of Augmented Domain Training Set Files:**
     
     -   Files in `augLibPath` are also of type `.pt`.
     -   Accessible using `torch.load()`.
     -  The file format is a dictionary with a key 'slide', and the corresponding value is a list containing paths to target domain images. Example of Augmented Domain Training Set File (`augmentation_train.pt`):
-      {  
-       'slide': [  
-           '/path/to/aug/image1.jpg',  
-           '/path/to/aug/image2.jpg',  
-           '/path/to/aug/image3.jpg',  
-            ]    
-      } 
+    -   {'slide': ['/aug/image1.jpg', '/aug/image2.jpg', ...] }
+
    
 ## Load Source Model Weights file
 -After completing data preparation, it is necessary to load the source domain model weight. In the `options/base_options.py` file, the `checkpoints_dir` field represents the path to the source domain model weights.
