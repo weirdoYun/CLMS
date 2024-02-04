@@ -76,8 +76,7 @@ def clip_data(dataLib):
     return data_lib_sim
 
 
-def func(fordIndex,TestLibPath,checkpointsPath, epoch):
-    # print('ford Number: ', fordIndex)
+def func(TestLibPath,checkpointsPath, epoch):
     Normalize = transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])
     Batchsize = 32
     num_worker = 4
@@ -201,8 +200,8 @@ def func_withOutGA(TestLibPath, checkpointsPath, epoch):
 if __name__ == '__main__':
         TestLibPath_target = ''
         TestLibPath_source = ''
-        checkpointsPath = '/home/tli/zy_checkpoints/checkpoints_MRI/siteABC2siteD/simSchemeV4_stage4_siteABC2siteD_deepLab_5Ford2_tv4_rb4_1217_tempData'
+        checkpointsPath = ''
         epoch = ''
 
-        thre_target, dice_target = func(str(1), TestLibPath_target, checkpointsPath, epoch)
+        thre_target, dice_target = func(TestLibPath_target, checkpointsPath, epoch)
         thre_source, dice_source = func_withOutGA(TestLibPath_source, checkpointsPath, epoch)
