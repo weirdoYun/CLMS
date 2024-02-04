@@ -8,15 +8,15 @@ CLMS: Bridging Domain Gaps in Medical Imaging with Continual Learning for Source
 # Get Started
 
 ## Environment
-Python=3.7.7  
-torch=1.7.0  
-torchvision=0.8.1  
-SimpleITK=2.2.0  
-Pillow=8.2.0  
-opencv-python=4.5.5.64  
-scikit-image=0.17.2  
-scikit-learn=0.23.2  
-scipy=1.2.0  
+- Python=3.7.7  
+- torch=1.7.0  
+- torchvision=0.8.1  
+- SimpleITK=2.2.0  
+- Pillow=8.2.0  
+- opencv-python=4.5.5.64  
+- scikit-image=0.17.2  
+- scikit-learn=0.23.2  
+- scipy=1.2.0  
 
 ## Datasets Preparation
 
